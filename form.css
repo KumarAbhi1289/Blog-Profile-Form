@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+/* 
+    font-family: 'Raleway', sans-serif; 
+    font-family: 'Akaya Kanadaka', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+
+/* Utilites Classes Starts Here */
+
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.align{
+    align-items: center;
+}
+
+/* Utilities Classes Ends here */
+
+
+.showImg img{
+    width: 100.1%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    max-height: 90vh;
+}
+.modal-content{
+    position: relative;
+}
+.modal-content .modal-body{
+    padding: 0;
+}
+.modal-content button{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    background: #000;
+    outline: none;
+    border: none;
+    margin: 0.3rem 0.3rem 0 0 ;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content button span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./image/flower2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main header{
+    width: 100%;
+    height: 5rem;
+    background: #000;
+    opacity: 0.5;
+}
+.main .heading{
+    height: 100%;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+.main .heading h1{
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #fff;
+}
+section{
+    width: 50%;
+    margin: auto;
+    padding: 3rem 0;
+    color: #fff;
+}
+section #title{
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+}
+section #profile{
+    position: relative;
+}
+section #profile #photo{
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+section #profile #photo abbr{
+    cursor: pointer;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+}
+section #profile #edit-profile{
+    position: absolute;
+    color: #000;
+    top: 74%;
+    left: 74%;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: grey;
+    border: 2px solid #000;
+}
+section #profile #edit-profile .fa-camera{
+    font-size: 0.7rem;
+}
+section #profile input{
+    display: none;
+}
+section .mb-3 label{
+    font-size: 1.3rem;
+}
+section .gender p{
+    font-size: 1.3rem;
+}
+section .gender .radio{
+    flex-direction: column;
+    margin-left: 2rem;
+}
+section .gender .radio .genders{
+    margin-bottom: 1rem;
+}
+section .submit{
+    width: 50%;
+}
+section .submit button{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .submit button span{
+    font-size: 2rem;
+    transition: all 1s ease;
+}
+
+section .submit button:hover span{
+    letter-spacing: 0.5rem;
+}
+
+footer{
+    height: 3rem;
+    background: #000;
+    opacity: 0.4;
+    align-items:flex-end;
+}
+footer .copyright{
+    color: #fff;
+}
+
+
+
+/* mobile respnsive */
+@media(max-width: 768px){
+    section{
+        width: 70%;
+    }
+}
+@media(max-width: 400px){
+    html{
+        font-size: 85%;
+    }
+}
+@media(max-width: 280px){
+    html{
+        font-size: 65%;
+    }
+}
